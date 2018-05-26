@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	background: #f7f5f0;
+}
+.side-bar {
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	padding-top: 50px;
+	overflow-x: hidden;
+	background: #606c88;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding-left: 40px;
+}
+nav li {
+	padding-top: 10px;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+}
+main {
+	margin-left: 200px;
+	padding: 0px 10px;
+}
+header {
+	padding-top: 70px;
+	min-height: 400px;
+	background-image: url('images/toronto.jpg');
+	/* [disabled]background-position: 94% 0%;
+*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.top-header-intro {
+	color: white;
+}
+
+.top-header-link {
+	text-decoration: none;
+	color: white;
+}
+.top-header-link:hover{
+	color: red;
+}
+#profile-picture {
+	width: 100%;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  min-height: 450px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
